@@ -42,6 +42,12 @@ function App() {
           description=""
           imgUrl="https://img.freepik.com/free-photo/customer-satisfaction-service-care-problem-solving_53876-120094.jpg"
         />
+
+                <CardInfo
+          title="Laser Cutting"
+          description=""
+          imgUrl="https://img.freepik.com/free-photo/customer-satisfaction-service-care-problem-solving_53876-120094.jpg"
+        />
       </div>
       {/* </div> */}
       <Toaster
