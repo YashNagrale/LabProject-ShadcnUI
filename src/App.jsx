@@ -1,5 +1,4 @@
 import { Toaster } from "./components/ui/sonner";
-import { Popup } from "./components/Popup";
 import Navbar from "./components/Navbar";
 import CardInfo from "./components/CardInfo";
 
@@ -7,8 +6,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <Popup />
-      <div className="flex justify-center gap-8 flex-wrap my-10">
+      <div className="flex justify-center gap-8 flex-wrap my-10 ">
         <CardInfo
           title="Buy Electronics"
           description=""
@@ -45,6 +43,7 @@ function App() {
           imgUrl="https://img.freepik.com/free-photo/customer-satisfaction-service-care-problem-solving_53876-120094.jpg"
         />
       </div>
+      {/* </div> */}
       <Toaster
         position="top-center"
         swipeDirections={["top", "left", "right"]}

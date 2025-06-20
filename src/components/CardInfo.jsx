@@ -6,7 +6,7 @@ import "../../src/index.css";
 const CardInfo = ({
   title = "Card Title",
   description = "Card Description",
-  imgUrl = "https://lh5.googleusercontent.com/proxy/t08n2HuxPfw8OpbutGWjekHAgxfPFv-pZZ5_-uTfhEGK8B5Lp-VN4VjrdxKtr8acgJA93S14m9NdELzjafFfy13b68pQ7zzDiAmn4Xg8LvsTw1jogn_7wStYeOx7ojx5h63Gliw",
+  imgUrl = "https://example.com/image.jpg",
 }) => {
   const [isFlipped, setIsFlipped] = useState(false);
 
