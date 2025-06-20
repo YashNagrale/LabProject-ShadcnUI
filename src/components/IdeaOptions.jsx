@@ -10,14 +10,14 @@ import {
 } from "@/components/ui/drawer";
 import { Button } from "./ui/button";
 
-function IdeaOptions() {
+function IdeaOptions({ classes = "" }) {
   return (
     <Drawer>
       <DrawerTrigger>
-        <li>
+        <li className={`${classes} list-none`}>
           <a
             href="#startproject"
-            className="text-muted-foreground font-semibold hover:text-white transition-colors duration-300"
+            className="font-semibold hover:text-white transition-colors duration-300"
           >
             Start Project
           </a>
@@ -25,14 +25,12 @@ function IdeaOptions() {
       </DrawerTrigger>
       <DrawerContent>
         <DrawerHeader>
-          <DrawerTitle>Are you absolutely sure?</DrawerTitle>
-          <DrawerDescription>This action cannot be undone.</DrawerDescription>
+          <DrawerTitle>Do you have any content?</DrawerTitle>
+          <DrawerDescription>Select one of the option</DrawerDescription>
         </DrawerHeader>
-        <DrawerFooter>
-          <Button>Submit</Button>
-          <DrawerClose>
-            <Button variant="outline">Cancel</Button>
-          </DrawerClose>
+        <DrawerFooter className="flex sm:flex-row items-center justify-center">
+          <Button>I have a content</Button>
+          <Button>I don't have a content</Button>
         </DrawerFooter>
       </DrawerContent>
     </Drawer>
