@@ -1,22 +1,22 @@
 @import "../src/index.css";
 
-.marquee-container {
-  display: flex; /* Use flexbox to align cards in a row */
-  overflow: hidden; /* Prevent overflow of the cards */
-  width: 100%; /* Full width for marquee effect */
-  position: relative; /* Position relative for absolute positioning of inner elements */
+/* .marquee-container {
+  display: flex; 
+  overflow: hidden; 
+  width: 100%; 
+  position: relative; 
 }
 
 .marquee {
-  display: flex; /* Flexbox for horizontal alignment of cards */
-  animation: marquee 20s linear infinite; /* Continuous left-moving animation */
-}
+  display: flex; 
+  animation: marquee 20s linear infinite; 
+} */
 
 .card-container {
   width: 15rem;
   height: 20rem;
   perspective: 1000px;
-  margin-right: 1rem; /* Space between cards */
+  margin-right: 1rem;
 }
 
 .card-inner {
