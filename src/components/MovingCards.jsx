@@ -5,8 +5,6 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "./ui/carousel";
-import Autoplay from "embla-carousel-autoplay";
-import { Card, CardContent } from "./ui/card";
 import CardInfo from "./CardInfo";
 
 function MovingCards() {
@@ -22,74 +20,58 @@ function MovingCards() {
         "https://img.freepik.com/free-photo/customer-satisfaction-service-care-problem-solving_53876-120094.jpg",
     },
     {
-      title: "Buy Electronics",
+      title: "Accessories",
       imgUrl:
         "https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/02/arduino-board-types.jpg",
     },
     {
-      title: "Services",
+      title: "Consulting",
       imgUrl:
         "https://img.freepik.com/free-photo/customer-satisfaction-service-care-problem-solving_53876-120094.jpg",
     },
     {
-      title: "Services",
+      title: "Extra",
       imgUrl:
         "https://img.freepik.com/free-photo/customer-satisfaction-service-care-problem-solving_53876-120094.jpg",
     },
     {
-      title: "Services",
+      title: "More",
       imgUrl:
         "https://img.freepik.com/free-photo/customer-satisfaction-service-care-problem-solving_53876-120094.jpg",
     },
   ];
 
-  // return (
-  //   <div className="flex flex-col justify-center items-center w-full px-4 sm:px-6 md:px-8">
-  //     <Carousel
-  //       opts={{
-  //         align: "start",
-  //         slidesToScroll: 1,
-  //         loop: true,
-  //         skipSnaps: false,
-  //       }}
-  //       className="w-[95%] border-2 border-amber-400"
-  //     >
-  //       <CarouselContent className="-ml-1  border-2 border-red-400">
-  //         {cards.map((card, index) => (
-  //           <CarouselItem
-  //             key={index}
-  //             className="pl-1 basis-full lg:basis-1/3  border-2 border-blue-400"
-  //           >
-  //             <div className="p-1 w-[16rem]  border-2 border-green-400">
-  //               <CardInfo title={card.title} description="" imgUrl={card.url} />
-  //             </div>
-  //           </CarouselItem>
-  //         ))}
-  //       </CarouselContent>
-  //       <CarouselPrevious />
-  //       <CarouselNext />
-  //     </Carousel>
-  //   </div>
-  // );
-
   return (
-    <div className="flex justify-center">
-      <Carousel className="w-[75%]">
-        <CarouselContent className="-ml-1">
-          {cards.map((card, index) => (
-            <CarouselItem
-              key={index}
-              className="pl-1 md:basis-1/2 lg:basis-1/3"
-            >
-              <div className="p-1">
-                <CardInfo title={card.title} description="" imgUrl={card.url} />
-              </div>
-            </CarouselItem>
-          ))}
-        </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
-      </Carousel>
+    <div className="w-full flex justify-center overflow-x-clip">
+      <div className="relative w-full max-w-7xl">
+        <Carousel
+          opts={{
+            align: "start",
+          }}
+          className="w-full"
+        >
+          {/* ✅ Buttons inside and slightly offset */}
+          <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 z-10" />
+          <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 z-10" />
+
+          <CarouselContent>
+            {cards.map((card, index) => (
+              <CarouselItem
+                key={index}
+                className="basis-full sm:basis-1/2 md:basis-1/3 lg:basis-1/4"
+              >
+                <div className="p-2">
+                  <CardInfo
+                    title={card.title}
+                    description=""
+                    imgUrl={card.imgUrl}
+                  />
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+        </Carousel>
+      </div>
     </div>
   );
 }

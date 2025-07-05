@@ -12,11 +12,17 @@
   animation: marquee 20s linear infinite; 
 } */
 
-.card-container {
+/* .card-container {
   width: 15rem;
   height: 20rem;
   perspective: 1000px;
   margin-right: 1rem;
+} */
+
+.card-container {
+  /* remove fixed width */
+  height: 20rem;
+  perspective: 1000px;
 }
 
 .card-inner {
