@@ -42,7 +42,7 @@ function MovingCards() {
   ];
 
   return (
-    <div className="w-full flex justify-center overflow-x-clip">
+    <div className="w-full h-full flex justify-center overflow-x-clip">
       <div className="relative w-full max-w-7xl">
         <Carousel
           opts={{

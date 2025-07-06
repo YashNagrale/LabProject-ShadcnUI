@@ -2,13 +2,15 @@ import { Toaster } from "./components/ui/sonner";
 import Navbar from "./components/Navbar";
 import CardInfo from "./components/CardInfo";
 import MovingCards from "./components/MovingCards";
+import LandingPage from "./components/LandingPage";
 
 function App() {
   return (
     <>
-      <Navbar />
-      <MovingCards />
-      <div className="flex justify-center gap-8 flex-wrap my-10 ">
+      <LandingPage />
+      {/* <Navbar />
+      <MovingCards /> */}
+      {/* <div className="flex justify-center gap-8 flex-wrap my-10 ">
         <CardInfo
           title="Buy Electronics"
           description=""
@@ -50,7 +52,7 @@ function App() {
           description=""
           imgUrl="https://img.freepik.com/free-photo/customer-satisfaction-service-care-problem-solving_53876-120094.jpg"
         />
-      </div>
+      </div> */}
       {/* </div> */}
       <Toaster
         position="top-center"
