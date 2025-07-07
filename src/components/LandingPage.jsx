@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Navbar from "./Navbar";
 import MovingCards from "./MovingCards";
+import { Button } from "./ui/button";
 
 const LandingPage = () => {
   useEffect(() => {
@@ -52,29 +53,32 @@ const LandingPage = () => {
     <div className="hero relative w-full bg-gradient-to-b from-[#0a0a12] to-black text-[#e2e2e2]">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,#0a0a12_0%,#000000_100%)] z-[-1]" />
       <div className='absolute inset-0 bg-[url(&apos;data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><circle cx="50" cy="50" r="0.5" fill="white" opacity="0.5"/></svg>&apos;)] bg-[length:2px_2px] animate-[twinkle_10s_infinite_alternate] z-[-1]' />
+
       <Navbar />
 
       {/* Hero content */}
-      <div className="container mx-auto px-4 flex flex-col md:flex-row items-center py-20">
+      <div className="container mx-auto px-4 flex flex-col md:flex-row items-center py-28">
         <div className="md:w-1/2 mb-10 md:mb-0">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 text-shadow-md animate-pulse">
-            Transform Your{" "}
+            Nalanda{" "}
             <span className="bg-gradient-to-r from-purple-500 to-indigo-400 bg-clip-text text-transparent">
-              Digital
+              Abhiyan's
             </span>{" "}
-            Experience
+            Lab
           </h1>
           <p className="text-lg mb-8 opacity-80">
             Innovative solutions powered by cutting-edge technology and designed
             for tomorrow's challenges.
           </p>
           <div className="flex space-x-4">
-            <button className="px-6 py-3 bg-gradient-to-r from-purple-600 to-blue-500 rounded-full font-bold hover:shadow-lg transition-all transform hover:scale-105">
+            <Button className="px-6 py-5 bg-gradient-to-r from-purple-600 to-blue-500 rounded-full font-bold hover:shadow-lg transition-all transform hover:scale-105">
               Get Started
-            </button>
-            <button className="px-6 py-3 border border-purple-500 rounded-full font-bold hover:bg-purple-900 hover:bg-opacity-20 transition-all transform hover:scale-105">
-              Learn More
-            </button>
+            </Button>
+            <Button className="rounded-full" asChild>
+              <button className="px-6 py-5 bg-transparent border border-purple-500 rounded-full font-bold hover:bg-purple-900 hover:bg-opacity-20 transition-all transform hover:scale-105">
+                Learn More
+              </button>
+            </Button>
           </div>
         </div>
 
@@ -84,7 +88,7 @@ const LandingPage = () => {
             <div className="absolute bottom-0 right-0 w-64 h-64 rounded-full blur-3xl bg-blue-600 opacity-20" />
             <div className="transform-gpu transition-transform duration-500 hover:rotate-y-6 animate-[float_6s_ease-in-out_infinite]">
               <img
-                src="https://placehold.co/800x600"
+                src="https://pbs.twimg.com/media/GAUcb3dXMAAPsmt.jpg:large"
                 alt="Hero Image"
                 className="w-full rounded-lg shadow-2xl"
               />
@@ -106,7 +110,7 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
-      <div className="">
+      <div className="pt-20 pb-10">
         <MovingCards />
       </div>
     </div>

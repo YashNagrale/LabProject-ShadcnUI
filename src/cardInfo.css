@@ -21,7 +21,7 @@
 
 .card-container {
   /* remove fixed width */
-  height: 20rem;
+  height: 23rem;
   perspective: 1000px;
 }
 

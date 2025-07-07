@@ -17,7 +17,7 @@ const Navbar = () => {
           <p>Abhiyan design tech</p>
         </div>
 
-        <div className="hidden md:flex items-center justify-center py-3 px-4 border-2 rounded-full">
+        <div className="hidden min-[1055px]:flex items-center justify-center py-3 px-4 border-2 rounded-full">
           {/* Navigation Items */}
           <ul className="flex items-center space-x-6">
             <li>
@@ -64,7 +64,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div className="hidden md:flex space-x-3">
+        <div className="hidden min-[1055px]:flex space-x-3">
           <Button variant="secondary" className=" rounded-full cursor-pointer">
             Log in
           </Button>
@@ -72,7 +72,7 @@ const Navbar = () => {
         </div>
 
         {/* Sidebar navbar */}
-        <div className="md:hidden">
+        <div className="min-[1055px]:hidden">
           <Sheet>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon">
@@ -84,7 +84,7 @@ const Navbar = () => {
             </SheetTrigger>
             <SheetContent
               side="right"
-              className="w-full p-4 backdrop-blur-lg bg-background/80"
+              className="w-[90%] p-4 backdrop-blur-lg bg-background/80"
             >
               <p className="text-muted-foreground">Menu</p>
               <nav className="flex flex-col gap-3 ">

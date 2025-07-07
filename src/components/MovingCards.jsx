@@ -20,22 +20,27 @@ function MovingCards() {
         "https://img.freepik.com/free-photo/customer-satisfaction-service-care-problem-solving_53876-120094.jpg",
     },
     {
-      title: "Accessories",
+      title: "3D Printing",
       imgUrl:
-        "https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/02/arduino-board-types.jpg",
+        "https://sklc-tinymce-2021.s3.amazonaws.com/comp/2023/01/_Different%20Types%20Of%203D%20Printing%20Technologies_1_1673449314.png",
     },
     {
-      title: "Consulting",
+      title: "Laser cutting",
       imgUrl:
-        "https://img.freepik.com/free-photo/customer-satisfaction-service-care-problem-solving_53876-120094.jpg",
+        "https://www.americanmicroinc.com/wp-content/uploads/2021/07/blog-featured.jpg",
     },
     {
-      title: "Extra",
+      title: "PCB Design",
       imgUrl:
-        "https://img.freepik.com/free-photo/customer-satisfaction-service-care-problem-solving_53876-120094.jpg",
+        "https://etteplan.b-cdn.net/2024/01/PCB-scaled-aspect-ratio-5-3-2048x1229.jpg?width=2048&quality=60",
     },
     {
       title: "More",
+      imgUrl:
+        "https://img.freepik.com/free-photo/customer-satisfaction-service-care-problem-solving_53876-120094.jpg",
+    },
+        {
+      title: "Roshesh",
       imgUrl:
         "https://img.freepik.com/free-photo/customer-satisfaction-service-care-problem-solving_53876-120094.jpg",
     },
@@ -50,7 +55,6 @@ function MovingCards() {
           }}
           className="w-full"
         >
-          {/* ✅ Buttons inside and slightly offset */}
           <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 z-10" />
           <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 z-10" />
 
